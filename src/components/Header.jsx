@@ -3,7 +3,7 @@ import "../layouts/Header.css";
 function Header() {
   return (
     <header>
-      <img src={logo} alt="logo" width="100%" height="100%" />
+      <img src={logo} alt="logo" width="100%" height="100%" loading="lazy"/>
       <p>my travel journal</p>
     </header>
   );

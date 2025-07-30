@@ -6,11 +6,11 @@ function Item({ img, title, country, googleMapsLink, dates, text }) {
     <div>
       <article>
         <div className="img">
-          <img src={img.src} alt={img.alt} />
+          <img src={img.src} alt={img.alt} loading="lazy"/>
         </div>
         <div className="all">
           <div className="location">
-            <img src={location} alt="location" />
+            <img src={location} alt="location" loading="lazy"/>
             <span>{country}</span>
             <a href={googleMapsLink}>View in google maps</a>
           </div>
