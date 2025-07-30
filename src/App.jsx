@@ -5,10 +5,10 @@ import data from "./data.js";
 function App() {
   const res = data.map((item, i) => {
     return (
-      <>
-        <Item {...item} key={item.id} />
-        {i !== data.length - 1 && <hr/>}
-      </>
+      <div key={item.id}>
+        <Item {...item} />
+        {i !== data.length - 1 && <hr />}
+      </div>
     );
   });
 
